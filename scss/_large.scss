@@ -1,0 +1,20 @@
+header,
+main,
+footer {
+    max-width: 1100px;
+}
+
+header nav ul {
+    gap: 0.5rem;
+}
+
+header nav li a {
+    font-size: 1.05rem;
+}
+
+@for $i from 1 through 12 {
+    $w: calc($i / 12) * 100%;
+    .large-#{$i} {
+        flex-basis: $w;
+    }
+}

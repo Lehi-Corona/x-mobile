@@ -1,0 +1,51 @@
+/* --------------------------- NAVIGATION --------------------------- */
+.hamburger {
+    display: none;
+}
+
+header {
+    max-width: 960px;
+    margin: auto;
+}
+
+header nav {
+    position: static;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: none;
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0;
+    }
+
+    li a {
+        padding: 0.55rem 0.8rem;
+        color: $primaryColor;
+        border-radius: 6px;
+    }
+
+    li.active a {
+        color: #fff;
+        background-color: $primaryColor;
+    }
+}
+
+main,
+footer {
+    max-width: 960px;
+    margin: auto;
+}
+
+@for $i from 1 through 12 {
+    $w: calc($i / 12) * 100%;
+    .medium-#{$i} {
+        flex-basis: $w;
+    }
+}
