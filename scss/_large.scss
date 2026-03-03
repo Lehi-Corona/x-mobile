@@ -12,6 +12,14 @@ header nav li a {
     font-size: 1.05rem;
 }
 
+main h1 {
+    font-size: 2.3rem;
+}
+
+.card {
+    padding: 1rem;
+}
+
 @for $i from 1 through 12 {
     $w: calc($i / 12) * 100%;
     .large-#{$i} {

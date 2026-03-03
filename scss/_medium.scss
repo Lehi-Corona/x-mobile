@@ -43,6 +43,15 @@ footer {
     margin: auto;
 }
 
+main h1 {
+    font-size: 2rem;
+}
+
+.generation-card img {
+    min-height: 170px;
+    object-fit: cover;
+}
+
 @for $i from 1 through 12 {
     $w: calc($i / 12) * 100%;
     .medium-#{$i} {
